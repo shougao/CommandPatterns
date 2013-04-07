@@ -1,3 +1,6 @@
+/**
+ * 命令模式定义：将请求封装成对象。
+ */
 package com.shougao.study;
 
 public class Main {
@@ -12,5 +15,9 @@ public class Main {
 		RemoteControl mRemoteControl = new RemoteControl();
 		mRemoteControl.setCommand(new LightOnCommand(new Light()));
 		mRemoteControl.buttonPrssed();
+		
+		mRemoteControl.setCommand(new LightOffCommand(new Light()));
+		mRemoteControl.buttonPrssed();
+		mRemoteControl.undo();
 	}
 }

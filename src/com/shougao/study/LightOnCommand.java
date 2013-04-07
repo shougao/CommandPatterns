@@ -16,5 +16,8 @@ public class LightOnCommand implements Command {
 		mLight = l;
 	}
 	
-
+	//添加撤销功能，不管什么操作都需要正确撤销。
+	public void undo(){
+		mLight.off();
+	}
 }

@@ -6,5 +6,6 @@ package com.shougao.study;
  */
 
 public interface Command {
-	void execute();
+	public void execute();
+	public void undo();
 }
