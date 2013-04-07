@@ -19,5 +19,9 @@ public class Main {
 		mRemoteControl.setCommand(new LightOffCommand(new Light()));
 		mRemoteControl.buttonPrssed();
 		mRemoteControl.undo();
+
+		mRemoteControl.setCommand(new FanHighCommand(new FanSpeed()));
+		mRemoteControl.buttonPrssed();
+//		mRemoteControl.undo();
 	}
 }
